@@ -28,6 +28,5 @@
   },
   "dependencies": {
     "regenerator-runtime": "^0.14.1"
-  },
-  "type": "module"
+  }
 }
