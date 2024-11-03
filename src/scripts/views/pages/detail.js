@@ -1,3 +1,5 @@
+import TheMovieDbSource from '../../data/themoviedb-source';
+
 const Detail = {
   async render() {
     return `
@@ -7,6 +9,8 @@ const Detail = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const movie = await TheMovieDbSource.detailMovie(id);
+    console.log(movie);
   },
 };
 
